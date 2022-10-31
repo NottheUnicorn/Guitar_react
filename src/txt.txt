@@ -1,0 +1,25 @@
+ReactDOM.render(
+    <React.StrictMode>
+      <Provider store={store}>
+      <Router>
+        <Switch>
+        
+          <Route exact path="/">
+            <Home title={temp_props}/>
+          </Route>
+          <Route path='/phonebook'>
+            <Phonebook></Phonebook>
+          </Route>
+          <Route path='/contact'>
+            <Contact></Contact>
+          </Route>
+          <Route path='/about'>
+            <About></About>
+          </Route>
+        
+        </Switch>
+      </Router>
+      </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
